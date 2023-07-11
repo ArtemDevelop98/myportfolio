@@ -1,0 +1,65 @@
+.skills{
+    &__wrapper{
+        padding-top: 60px;
+        display: grid;
+        grid-template: repeat(2,minmax(270px,auto)) / repeat(4,270px);
+        grid-auto-rows: minmax(270px,auto);
+        gap: 13px;
+    }
+    &__skill{
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000;
+        &-img{
+            height: 85px;
+            img{
+                max-width: 100%;
+            }
+        }
+        &-descr{
+            color: #000;
+            font-size: 12px;
+            line-height: normal;
+        }
+    }
+    &__shell{
+        margin-top: 124px;
+        display: grid;
+        grid-template-columns: repeat(3,350px);
+        grid-template-rows:repeat(2,65px) ;
+        grid-auto-rows: 65px;
+        column-gap: 45px;
+        row-gap: 40px;
+    }
+    &__measurement{
+        &-container{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-title{
+            padding-left: 10px;
+            position: relative;
+            @include before_circle;
+        }
+        &-degree{
+            color: #000;
+            font-size: 14px;
+        }
+        &-scale{
+            position: relative;
+            margin-top: 27px;
+            width: 350px;
+            height: 14px;
+            border-radius: 4px;
+            background: #E8E4DE;
+            &-full{
+                position: absolute;
+                width: 100%;
+                height: 14px;
+                border-radius: 4px;
+                background: $main-color;
+
+            }
+        }
+        
+    }
+}

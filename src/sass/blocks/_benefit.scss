@@ -1,21 +1,21 @@
 .benefit{
     padding-top: 125px;
-    &__title,&__subtitle{
-        text-align: center;
-    }
-    &__title{
-        position: relative;
-        @include before_circle;
-        &:before{
-            top: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__divider{
-        display: block;
-        margin: 25px auto;
-    }
+    // &__title,&__subtitle{
+    //     text-align: center;
+    // }
+    // &__title{
+    //     position: relative;
+    //     @include before_circle;
+    //     &:before{
+    //         top: -5px;
+    //         left: 50%;
+    //         transform: translateX(-50%);
+    //     }
+    // }
+    // &__divider{
+    //     display: block;
+    //     margin: 25px auto;
+    // }
 
     &__wrapper{
         padding: 60px 65px 0 65px;

@@ -10,3 +10,9 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+const   counters =document.querySelectorAll('.skills__measurement-degree'),
+        lines = document.querySelectorAll('.skills__measurement-scale-full');
+
+counters.forEach((item,i)=>{
+    lines[i].style.width = item.innerHTML;
+});
